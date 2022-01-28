@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filmek listája</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="film">
+        <div id="header">
+            <h1>Filmek listája</h1>
+        </div>
+        <div id="body">
+            <table>
+                <tr></tr>
+                <th>Film címe</th>
+                <th>Rendezte</th>
+                <th>A film hossza</th>
+                </tr>
+
+                <% filmek.forEach(film=> { %>
+                    <tr>
+                        <td>
+                            <%= film.cim %>
+                        </td>
+                        <td>
+                            <%= film.Nev %>
+                        </td>
+                        <td>
+                            <%= film.hossz %> perc
+                        </td>
+                    </tr>
+                    <% }) %>
+
+            </table>
+        </div>
+        <div id="gomb"><a href="/csakszinesz"><button type="button" class="btn btn-success">A második lekérdezés
+                    itt!</button></a></div>
+        <div id="footer">
+            <p>Készítette: Rékási László</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

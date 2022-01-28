@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Filmek listája</title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="film">
+        <div id="header">
+            <h1>Színészek listája</h1>
+            <h3>akik nem rendeztek filmet</h3>
+        </div>
+        <div id="szineszek">
+            <div class="card"
+                style="width: 63%; margin: 0 auto 0 auto; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                <img src="the-phantom.png" class="card-img-top" alt="színész neve">
+                <div class="card-body">
+                    <h3>Színész neve:</h3>
+                    <% csakszinesz.forEach(szinesz=> { %>
+                        <h3>
+                            <%= szinesz.Nev %>
+                        </h3>
+                        <% }) %>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="gomb"><a href="/filmek"><button type="button" class="btn btn-success">Az első lekérdezés
+                    itt!</button></a></div>
+        <div id="footer">
+            <p>Készítette: Rékási László</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
