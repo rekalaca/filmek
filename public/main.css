@@ -42,6 +42,7 @@ body {
 th {
     border-bottom: crimson 3px solid;
     text-align: left;
+    text-transform: uppercase;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
@@ -54,12 +55,12 @@ table {
     background-color: ivory;
     width: 100%;
     text-align: left;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 h1 {
     text-align: center;
-    font-family: "Trirong", serif;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
 }
 
 h3 {

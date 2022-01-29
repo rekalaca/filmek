@@ -26,7 +26,7 @@ const filmek = (callback) => {
 
 const csakszinesz = (callback) => {
   const mySelect =
-    "SELECT szemely.Nev FROM szemely INNER JOIN film WHERE szemely.sz_kod NOT IN(SELECT film.rendezo FROM film);";
+    "SELECT Nev FROM szemely WHERE sz_kod NOT IN (SELECT rendezo FROM film);";
   connection.query(mySelect, (err, result) => {
     if (err) callback(err, null);
     callback(null, JSON.parse(JSON.stringify(result)));
